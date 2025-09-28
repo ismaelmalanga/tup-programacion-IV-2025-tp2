@@ -1,0 +1,28 @@
+@url=http://localhost:3000
+
+### GET
+GET {{url}}/rectangulos
+
+### GET
+GET {{url}}/rectangulos/2
+
+### POST
+POST {{url}}/rectangulos
+Content-Type: application/json
+
+{
+    "base": 7,
+    "altura": 3
+}
+
+### DELETE
+DELETE {{url}}/rectangulos/5
+
+### PUT
+PUT {{url}}/rectangulos/4
+Content-Type: application/json
+
+{
+    "base": 0,
+    "altura": 0
+}
