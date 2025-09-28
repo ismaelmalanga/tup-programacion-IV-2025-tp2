@@ -1,0 +1,46 @@
+@url=http://localhost:3000
+
+GET {{url}}/tareas
+
+GET {{url}}/tareas/4
+
+GET {{url}}/tareas?completada=true
+
+GET {{url}}/tareas?completada=false
+
+POST {{url}}/tareas
+Content-Type: application/json
+
+{
+    "nombre": "comprar papel",
+    "completada": false
+}
+
+POST {{url}}/tareas
+Content-Type: application/json
+
+{
+    "nombre": "limpiar moto",
+    "completada": true
+}
+
+
+POST {{url}}/tareas
+Content-Type: application/json
+
+{
+    "nombre": "hacer los mandados",
+    "completada": 0
+}
+
+
+DELETE {{url}}/tareas/10
+
+
+PUT {{url}}/tareas/12
+Content-Type: application/json
+
+{
+    "nombre": "",
+    "completada": 0
+}
