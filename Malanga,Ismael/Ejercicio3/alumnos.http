@@ -1,0 +1,57 @@
+@url=http://localhost:3000
+
+GET {{url}}/alumnos
+
+
+GET {{url}}/alumnos/4
+
+
+POST {{url}}/alumnos
+Content-Type: application/json
+
+{
+    "nombre": "Ismael Malanga",
+    "nota1": 7,
+    "nota2": 8,
+    "nota3": 9,
+    "id_materia": 3
+}
+
+
+POST {{url}}/alumnos
+Content-Type: application/json
+
+{
+    "nombre": "Genaro Bazan",
+    "nota1": 6,
+    "nota2": 6,
+    "nota3": 5,
+    "id_materia": 4
+}
+
+
+POST {{url}}/alumnos
+Content-Type: application/json
+
+{
+    "nombre": "Joaquin Gonzales",
+    "nota1": 7,
+    "nota2": 9,
+    "nota3": 10,
+    "id_materia": 4
+}
+
+
+DELETE {{url}}/alumnos/10
+
+
+PUT {{url}}/alumnos/7
+Content-Type: application/json
+
+{
+    "nombre": "Jorgelina Malanga",
+    "nota1": 8,
+    "nota2": 9,
+    "nota3": 10,
+    "id_materia": 3
+}

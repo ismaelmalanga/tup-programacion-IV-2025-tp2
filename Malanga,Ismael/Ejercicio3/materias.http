@@ -1,0 +1,42 @@
+@url=http://localhost:3000
+
+
+GET {{url}}/materias
+
+
+GET {{url}}/materias/3
+
+
+POST {{url}}/materias
+Content-Type: application/json
+
+{
+    "nombre": "lengua"
+}
+
+
+POST {{url}}/materias
+Content-Type: application/json
+
+{
+    "nombre": "Historia"
+}
+
+
+POST {{url}}/materias
+Content-Type: application/json
+
+{
+    "nombre": "geografia"
+}
+
+
+DELETE {{url}}/materias/2
+
+
+PUT {{url}}/materias/5
+Content-Type: application/json
+
+{
+    "nombre": "analisis de datos"
+}
